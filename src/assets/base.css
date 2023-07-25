@@ -1,0 +1,40 @@
+:root {
+  --primary: #99FAE6;
+  --secondary: #F06449;
+  --light-grey: #EDE6E3;
+  --grey: #ABABAB;
+  --black: #202A25;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a, a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
