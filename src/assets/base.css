@@ -1,7 +1,7 @@
 :root {
   --primary: #99FAE6;
   --secondary: #F06449;
-  --light-grey: #EDE6E3;
+  --white-smoke: #F3F3F3;
   --grey: #ABABAB;
   --black: #202A25;
 }
@@ -15,16 +15,27 @@
   font-weight: normal;
 }
 
-a, a:visited {
-  color: inherit;
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a:not(.landing-link), a:visited {
+  color: var(--black);
+  opacity: .7;
 }
 
 a:hover {
-  color: var(--primary);
+  opacity: 1;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  line-height: 1.6;
+  color: var(--black);
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -36,5 +47,6 @@ body {
 }
 
 h1, h2 {
+  font-size: 2rem;
   font-weight: 700;
 }
