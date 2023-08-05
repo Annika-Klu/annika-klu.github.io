@@ -6,7 +6,7 @@ import BasePage from "../components/BasePage.vue"
   <BasePage>
     <h1>About me</h1>
     <p>
-      A trained anthropologist, I learned to code in 2020, was hooked from the start, and am now
+      I am a trained anthropologist who learned to code in 2020. I was hooked from the start and now
       work as a full stack developer. While I love design and enjoy creative, responsive frontends,
       I've discovered that my true passion is the backend: querying databases, using APIs,
       automating processes. My projects encompass a bit of both worlds, but - apart from a small
