@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Web Scraper",
+        "technologies": ["Python", "selenium library", "MongoDB"],
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Annika-Klu/ec-regulation-comments",
+        "description": "Script collecting comments from the European Commission website on a proposal to renew the Covid certificate. Scraped comments were saved to a Mongo DB. Since the comments are created dynamically, I ran a browser in headless mode to read them from the HTML document. I'll create a follow-up project evaluating and visualizing this data.",
+        "imgSrc": null
+    },
+    {
+        "id": 2,
+        "title": "Photo Album Backend",
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Annika-Klu/hchztsfts-be",
+        "technologies": ["Node express", "PostgreSQL"],
+        "description": "Backend application that retrieves image information (URL, description, etc.) from a PostgreSQL database. Simple authentication with a 24-hour access token based on a hash of the correct password plus a random 10-character word. The album itself was a gift to friends and is not publicly visible.",
+        "imgSrc": null
+    },
+    {
+        "id": 3,
+        "title": "Table Comparison Tool",
+        "liveUrl": "https://compare-tables.onrender.com/",
+        "githubUrl": "https://github.com/Annika-Klu/table-comparison-tool",
+        "technologies": ["Python", "pandas library", "flask"],
+        "description": "Compare table entries based on a unique entry identifier. Files must be uploaded in CSV format and are evaluated using the pandas library.",
+        "imgSrc": "https://iili.io/HZwbGxn.png"
+    },
+    {
+        "id": 4,
+        "title": "Weather App",
+        "technologies": ["Vue", "HTML", "CSS", "JavaScript"],
+        "liveUrl": "https://umbrella-or-not.onrender.com/",
+        "githubUrl": "https://github.com/Annika-Klu/weather-app",
+        "description": "A vue app displaying weather data retrieved from an express backend that uses the openweathermap API. Sets a random unsplash image of the requested location as the background image.",
+        "imgSrc": "https://iili.io/HZU8mbe.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Artist Portfolio",
+        "technologies": ["Vue", "Nuxt", "HTML", "CSS", "JavaScript"],
+        "liveUrl": "https://art.annonymous.de",
+        "githubUrl": "https://github.com/Annika-Klu/annonymous-art",
+        "description": "Minmalistic artist portfolio. Needs some revision of mobile layout.",
+        "imgSrc": "https://iili.io/HZU6uRV.png"
+    },
+    {
+        "id": 6,
+        "title": "This Dev Portfolio",
+        "technologies": ["Vue", "HTML", "CSS", "JavaScript"],
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Annika-Klu/annika-klu.github.io",
+        "description": "A simple vue app with a custom design. Uses a workflow to automatically deploy a build on pushing to master.",
+        "imgSrc": "https://iili.io/HZwZuVf.png"
+    }
+]
