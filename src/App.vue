@@ -1,3 +1,7 @@
+<script setup>
+import ProfileCard from "./components/ProfileCard.vue"
+</script>
+
 <template>
-  <div>Rebuilding...</div>
+  <ProfileCard />
 </template>

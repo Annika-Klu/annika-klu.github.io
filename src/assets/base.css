@@ -2,7 +2,7 @@
   --text: #f4f7fb;
   --muted: rgba(244, 247, 251, 0.72);
   --accent: #4db9ce;
-  --glass: rgba(255, 255, 255, 0.10);
+  --glass: rgba(255, 255, 255, 0.1);
   --border: rgba(255, 255, 255, 0.18);
 }
 
@@ -25,7 +25,8 @@ a:hover {
   color: var(--accent);
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -37,7 +38,7 @@ body {
   justify-content: center;
 
   color: var(--text);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -46,11 +47,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background:
-    linear-gradient(
-      rgba(8, 31, 28, 0.35),
-      rgba(8, 17, 31, 0.55)
-    ),
+  background: linear-gradient(rgba(8, 31, 28, 0.35), rgba(8, 17, 31, 0.55)),
     url("./images/hero-bg.jpg") center / cover fixed;
   background-attachment: fixed;
 }
