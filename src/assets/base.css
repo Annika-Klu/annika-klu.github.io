@@ -35,6 +35,11 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: var(--black);
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -44,6 +49,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background:
+    linear-gradient(
+      rgba(8, 31, 28, 0.35),
+      rgba(8, 17, 31, 0.55)
+    ),
+    url("./images/hero-bg.jpg") center / cover fixed;
+  background-attachment: fixed;
 }
 
 h1, h2 {
