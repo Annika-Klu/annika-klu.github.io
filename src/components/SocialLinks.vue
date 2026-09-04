@@ -9,8 +9,15 @@ defineProps({
 
 <template>
   <div class="links">
-    <a v-for="link in links" :key="link.href" :href="link.href" target="_blank">
+    <a
+      v-for="link in links"
+      :key="link.href"
+      :href="link.href"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {{ link.label }}
+      <span class="sr-only"> (opens in new tab)</span>
     </a>
   </div>
 </template>
@@ -28,5 +35,17 @@ a::before {
 
 a::after {
   content: " ]";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 </style>

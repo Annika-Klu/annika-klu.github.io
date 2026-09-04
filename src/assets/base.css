@@ -1,7 +1,8 @@
 :root {
   --text: #f4f7fb;
   --muted: rgba(244, 247, 251, 0.72);
-  --accent: #4db9ce;
+  --accent: #57c2d6;
+  --terminal: #a8aaaa;
   --glass: rgba(255, 255, 255, 0.1);
   --border: rgba(255, 255, 255, 0.18);
 }
