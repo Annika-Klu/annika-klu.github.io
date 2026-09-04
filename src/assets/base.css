@@ -1,9 +1,9 @@
 :root {
-  --primary: #99FAE6;
-  --secondary: #F06449;
-  --white-smoke: #F3F3F3;
-  --grey: #ABABAB;
-  --black: #202A25;
+  --text: #f4f7fb;
+  --muted: rgba(244, 247, 251, 0.72);
+  --accent: #4db9ce;
+  --glass: rgba(255, 255, 255, 0.10);
+  --border: rgba(255, 255, 255, 0.18);
 }
 
 *,
@@ -18,15 +18,11 @@
 a {
   text-decoration: none;
   text-align: center;
-}
-
-a:not(.landing-link), a:visited {
-  color: var(--black);
-  opacity: .7;
+  color: var(--text);
 }
 
 a:hover {
-  opacity: 1;
+  color: var(--accent);
 }
 
 html, body {
@@ -40,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  color: var(--black);
+  color: var(--text);
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -57,9 +53,4 @@ body {
     ),
     url("./images/hero-bg.jpg") center / cover fixed;
   background-attachment: fixed;
-}
-
-h1, h2 {
-  font-size: 2rem;
-  font-weight: 700;
 }
