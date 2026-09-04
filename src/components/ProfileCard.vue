@@ -2,8 +2,10 @@
 import TerminalLine from "./TerminalLine.vue"
 import SocialLinks from "./SocialLinks.vue"
 
+const showGithubLink = import.meta.env.VITE_HIDE_GITHUB_LINK !== "true"
+
 const links = [
-  { label: "GitHub", href: "https://github.com/annika-klu" },
+  ...(showGithubLink ? [{ label: "GitHub", href: "https://github.com/annika-klu" }] : []),
   { label: "XING", href: "https://www.xing.com/profile/Annika_Kluepfel" }
 ]
 </script>
