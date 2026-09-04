@@ -1,9 +1,10 @@
 :root {
-  --primary: #99FAE6;
-  --secondary: #F06449;
-  --white-smoke: #F3F3F3;
-  --grey: #ABABAB;
-  --black: #202A25;
+  --text: #f4f7fb;
+  --muted: rgba(244, 247, 251, 0.72);
+  --accent: #57c2d6;
+  --terminal: #a8aaaa;
+  --glass: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.18);
 }
 
 *,
@@ -18,25 +19,27 @@
 a {
   text-decoration: none;
   text-align: center;
-}
-
-a:not(.landing-link), a:visited {
-  color: var(--black);
-  opacity: .7;
+  color: var(--text);
 }
 
 a:hover {
-  opacity: 1;
+  color: var(--accent);
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   height: 100%;
 }
 
 body {
-  color: var(--black);
-  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -44,9 +47,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-h1, h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  background: linear-gradient(rgba(8, 31, 28, 0.35), rgba(8, 17, 31, 0.55)),
+    url("./images/hero-bg.jpg") center / cover fixed;
+  background-attachment: fixed;
 }
