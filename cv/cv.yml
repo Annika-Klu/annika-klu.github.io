@@ -13,7 +13,7 @@
 person:
   name: Annika Klüpfel
   title:
-    en: Full-Stack Developer
+    en: Full-Stack Software Developer
     de: Full-Stack-Softwareentwickler
 
 contact:
@@ -23,7 +23,7 @@ contact:
 
 profile:
   en: >
-    Full-stack developer with a strong focus on data. After studying
+    Full-stack software developer with a strong focus on data. After studying
     anthropology and working in public administration, I retrained as a
     developer in 2020. Since then I have built web applications with Vue and React,
     written SQL for APIs and reporting, and developed data
@@ -53,7 +53,7 @@ experience:
       - from: "2026-07"
         to: present
         role:
-          en: Full-Stack Developer
+          en: Full-Stack Software Developer
           de: Full-Stack-Softwareentwickler
         items:
           - en: Developing a web application in React, Next.js and TypeScript
@@ -90,7 +90,7 @@ experience:
   - from: "2021-03"
     to: "2023-08"
     role:
-      en: Full-Stack Developer
+      en: Full-Stack Software Developer
       de: Full-Stack-Softwareentwickler
     org: Whic UG
     location:

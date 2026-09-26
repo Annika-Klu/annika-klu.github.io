@@ -9,7 +9,7 @@ import ProfileLinks from "./ProfileLinks.vue"
 
     <h1>Annika Kl&uuml;pfel</h1>
 
-    <div class="role">Full-Stack Web Developer</div>
+    <div class="role">Full-Stack Software Developer</div>
 
     <p>
       Frontend is where I started – Vue is my framework of choice. My real passion, however, lies
