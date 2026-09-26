@@ -1,0 +1,244 @@
+# CV data, rendered by cv.typ.
+#
+# Conventions
+# - Text is either a plain string (same in every language) or a map with one
+#   entry per language: { en: ..., de: ... }
+# - Prose fields (profile, role, note, body, items) are Typst markup:
+#   _italic_, *bold*. Escape literal _ * # @ $ with a backslash.
+# - Dates are quoted "YYYY-MM" or "YYYY". Use "present" for ongoing entries.
+#   Omit `from` to render "until <to>", omit `to` for a single date.
+# - List items are plain text, or { text: ..., from/to: ... } to show a date
+#   next to that item.
+
+person:
+  name: Annika Klüpfel
+  title:
+    en: Full-Stack Developer
+    de: Full-Stack-Softwareentwickler
+
+contact:
+  email: AnnikaKluepfel@web.de
+  github: annika-klu
+  xing: Annika_Kluepfel
+
+profile:
+  en: >
+    Full-stack developer with a strong focus on data. After studying
+    anthropology and working in public administration, I retrained as a
+    developer in 2020. Since then I have built web applications with Vue and React,
+    written SQL for APIs and reporting, and developed data
+    pipelines and tooling in a data warehouse team. I am most at home beneath
+    the surface – databases, APIs and automation – while an eye for design
+    helps me on the frontend.
+  de: >
+    Full-Stack-Softwareentwickler mit ausgeprägtem Fokus auf Daten. Nach meinem
+    Ethnologie-Studium und einigen Jahren in der öffentlichen Verwaltung bin ich
+    2020 in die Softwareentwicklung gewechselt. Seitdem habe ich Webanwendungen
+    mit Vue und React entwickelt, SQL für APIs und Reporting
+    geschrieben sowie im Data-Warehouse-Team Datenpipelines und Tools für deren
+    Betrieb gebaut. Am wohlsten fühle ich mich unter der Oberfläche – bei
+    Datenbanken, APIs und Automatisierung. Mein Blick für Design kommt mir
+    dabei im Frontend zugute.
+
+experience:
+  # Several roles at one company: list them under `roles`, newest first.
+  - org: Klett Online-Weiterbildung GmbH & Co. KG
+    note:
+      en: formerly ILS Institut für Lernsysteme GmbH
+      de: ehemals ILS Institut für Lernsysteme GmbH
+    location:
+      en: Hamburg, Germany
+      de: Hamburg
+    roles:
+      - from: "2026-07"
+        to: present
+        role:
+          en: Full-Stack Developer
+          de: Full-Stack-Softwareentwickler
+        items:
+          - en: Developing a web application in React, Next.js and TypeScript
+            de: Entwicklung einer Webanwendung mit React, Next.js und TypeScript
+          - en: Writing a CLI wrapper for a configuration server in Go
+            de: Entwicklung eines CLI-Wrappers für einen Konfigurationsserver in Go
+          - en: Running a legacy Java application locally in Docker for development
+            de: Lokaler Betrieb einer Java-Legacy-Anwendung in Docker für die Entwicklung
+
+      - from: "2025-04"
+        to: "2026-06"
+        role:
+          en: Data Warehouse & BI Engineer
+          de: DWH- & BI-Engineer
+        items:
+          - en: Building and monitoring data pipelines
+            de: Entwicklung und Überwachung von Datenpipelines
+          - en: Tooling for pipeline operations, e.g. alerts for failed pipeline runs posted to a Microsoft Teams channel
+            de: Tools für den Pipeline-Betrieb, z. B. Benachrichtigungen über fehlgeschlagene Pipeline-Läufe in einem Teams-Kanal
+          - en: Writing a CLI in a repo holding SQL that helps deploy changes to different databases
+            de: Entwicklung eines CLI in einem SQL-Repository, um Änderungen auf verschiedene Datenbanken auszurollen
+
+      - from: "2023-10"
+        to: "2025-03"
+        role:
+          en: SQL Developer
+          de: SQL-Entwickler
+        items:
+          - en: Writing SQL for API endpoints, for ad-hoc data requests from departments (e.g. upcoming seminars in a given period) and as data sources for documents generated on demand from the CRM
+            de: SQL für API-Endpunkte, für Ad-hoc-Datenabfragen der Fachabteilungen (z. B. anstehende Seminare in einem bestimmten Zeitraum) sowie als Datenquelle für Dokumente, die bei Bedarf aus dem CRM erzeugt werden
+          - en: Developing a small web app for services the CRM does not provide, with Microsoft Entra ID sign-in (MSAL.js) and a GitHub Actions workflow deploying it to internal servers via self-hosted runners
+            de: Entwicklung einer kleinen Web-App für Funktionen, die das CRM nicht bietet, mit Anmeldung über Microsoft Entra ID (MSAL.js) und einem GitHub-Actions-Workflow für das Deployment auf interne Server über Self-hosted Runner
+
+  - from: "2021-03"
+    to: "2023-08"
+    role:
+      en: Full-Stack Developer
+      de: Full-Stack-Softwareentwickler
+    org: Whic UG
+    location:
+      en: Bremen, Germany (remote)
+      de: Bremen (remote)
+    groups:
+      - label:
+          en: Main tasks
+          de: Kernaufgaben
+        items:
+          - en: Building the spirits platform _Distilando_ in Vue (Nuxt for SEO)
+            de: Entwicklung der Plattform _Distilando_ in Vue (Nuxt für SEO)
+          - en: Backend of multiple Express apps querying SQL databases
+            de: Backend aus mehreren Express-Apps und SQL-Datenbanken
+          - en: Cloud deployments in a Docker-based environment
+            de: Deployment in der Cloud in einer Docker-basierten Umgebung
+      - label:
+          en: Other tasks as required
+          de: Weitere Aufgaben nach Bedarf, beispielsweise
+        items:
+          - en: Developing a product matching algorithm (JavaScript)
+            de: Entwicklung eines Algorithmus zum Abgleich von Produktdaten mit der internen Produkt-Datenbank (JavaScript)
+          - en: Various scripts to use third-party APIs or scrape data (JavaScript)
+            de: Skripte zur Nutzung diverser APIs oder für Daten-Scraping (JavaScript)
+          - en: Developing an application that accepts file uploads with product data, posts them to a third-party API for text generation and receives the results on a webhook endpoint (Python)
+            de: Entwicklung einer Anwendung, die Produktdaten an die API eines Dienstes für Produkt-Betextung sendet und generierte Texte auf einem Endpoint empfängt (Python)
+
+  - from: "2015-12"
+    to: "2022-02"
+    role:
+      en: Administration in Refugee Accommodations
+      de: Verwaltung in Einrichtungen für Geflüchtete
+    org: Fördern und wohnen AöR
+    location:
+      en: Hamburg, Germany
+      de: Hamburg
+    items:
+      - en: Managing room occupancies, data maintenance
+        de: Belegungsplanung, Datenpflege
+      - en: Intermittent management of an accommodation with a team of more than 20 people as its deputy head
+        de: Stellvertretende Teamleitung für ein Team aus über 20 Personen
+
+  - from: "2015-08"
+    to: "2015-11"
+    role:
+      en: Intern in PR and Design
+      de: Praktikantin in den Bereichen PR und Design
+    org: Breeze Technologies UG
+    location:
+      en: Hamburg, Germany
+      de: Hamburg
+    note:
+      en: formerly Robert Heinecke, Sascha Kuntze und Jan Rübbelke GbR
+      de: ehemals Robert Heinecke, Sascha Kuntze und Jan Rübbelke GbR
+    items:
+      - en: Design, research and copywriting for marketing materials
+        de: Gestaltung, Recherche und Texten für Marketingmaterial
+      - en: Writing a magazine article for _t3n_ (journal on digital economy)
+        de: Verfassen eines Artikels für _t3n_ (Magazin für digitale Wirtschaft)
+
+education:
+  - from: "2020-07"
+    to: "2020-12"
+    role:
+      en: Full-Stack Web Development Graduate
+      de: Absolventin des Kurses _Full-Stack Web Development_
+    org: Hamburg Coding School
+    location:
+      en: Hamburg, Germany
+      de: Hamburg
+    body:
+      - en: "Final project: travel blog in React with a Node.js backend fetching geographic data from a REST API"
+        de: "Abschlussprojekt: Reiseblog in React mit Node.js-Backend, das geographische Daten von einer REST-API bezieht"
+      - en: "Final grade: 14 out of 15"
+        de: "Abschlussnote: 14 von 15 Punkten"
+
+  - from: "2009-10"
+    to: "2015-07"
+    role:
+      en: B.A. & M.A. Social/Cultural Anthropology
+      de: B.A. & M.A. Ethnologie
+    org:
+      en: University of Hamburg
+      de: Universität Hamburg
+    location:
+      en: Hamburg, Germany
+      de: Hamburg
+    body:
+      - en: "Research topics: philosophy of science, ethnicity, nationalism"
+        de: "Schwerpunkte: Wissenschaftstheorie, Ethnizität, Nationalismus"
+      - en: "Final grade M.A.: 1.3 (94%)"
+        de: "Abschlussnote M.A.: 1,3 (94 %)"
+
+  - from: "2008-07"
+    role:
+      en: High School Diploma (Abitur)
+      de: Abitur
+    org: Balthasar-Neumann-Gymnasium
+    location:
+      en: Marktheidenfeld, Germany
+      de: Marktheidenfeld
+    body:
+      - en: "Main subjects: English, art, mathematics, religion"
+        de: "Prüfungsfächer: Englisch, Kunst, Mathematik, Religion"
+      - en: "Final grade: 1.4 (92%)"
+        de: "Abiturnote: 1,4 (92 %)"
+
+volunteering:
+  - from: "2011-04"
+    to: "2015-07"
+    role:
+      en: PR and Design
+      de: PR und Design
+    org: AIESEC
+    location:
+      en: Hamburg, Germany
+      de: Hamburg
+    note:
+      en: International student-run organisation, Local Committee Hamburg
+      de: Internationale studentische Organisation, Local Committee Hamburg
+    items:
+      - en: Partner company account management, mostly reviewing applications for internships
+        de: Betreuung von Partnerfirmen, v. a. Sichten von Bewerbungen
+      - text:
+          en: Creating marketing materials and copy, especially for the internship abroad programme
+          de: Erstellung von Marketingmaterialien, v. a. für das Auslandspraktika-Programm
+        to: "2014-03"
+
+languages:
+  - name: { en: German, de: Deutsch }
+    level: { en: Native (C2), de: Muttersprache (C2) }
+  - name: { en: English, de: Englisch }
+    level: { en: "Fluent, spoken and written (C1)", de: Fließend in Wort und Schrift (C1) }
+  - name: { en: French, de: Französisch }
+    level: { en: Intermediate (B1–B2), de: Gute Kenntnisse (B1–B2) }
+
+skills:
+  - group: { en: Programming, de: Programmierung }
+    items: [TypeScript, Python, SQL]
+  - group: Web
+    items: [Vue, React, Next.js, Node.js, Flask, REST APIs, Tailwind CSS]
+  - group: { en: Data, de: Daten }
+    items:
+      - { en: ETL pipelines, de: ETL-Pipelines }
+      - { en: Data modelling, de: Datenmodellierung }
+      - Microsoft Fabric
+      - Power BI
+  - group: Automation & DevOps
+    items: [Docker, GitHub Actions, CI/CD, { en: CLI tools, de: CLI-Tools }, Bash, Linux]
+  - group: Design
+    items: [Figma, Affinity Studio, Adobe Creative Cloud]
