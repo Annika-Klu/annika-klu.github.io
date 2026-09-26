@@ -1,0 +1,16 @@
+# Private details for CVs you send directly (not the public website).
+# Copy this file to private.yml (gitignored) and fill in your details, then:
+#   npm run cv:en:private   or   npm run cv:de:private
+
+# Photo shown in the header, path relative to cv.typ. Keep the image out of
+# git too (cv/*.jpg is gitignored). Remove the line for no photo.
+photo: photo.jpg
+
+# Merged into `contact` from cv.yml. Address lines are shown on one line in
+# the header; each may be localised like in cv.yml.
+contact:
+  phone: +49 40 1234 5678
+  address:
+    - Example Street 1
+    - 12345 Hamburg
+    - { en: Germany, de: Deutschland }

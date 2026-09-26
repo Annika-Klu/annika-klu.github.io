@@ -1,10 +1,9 @@
 <script setup>
-defineProps({
-  links: {
-    type: Array,
-    required: true
-  }
-})
+const links = [
+  { label: "GitHub", href: "https://github.com/annika-klu" },
+  { label: "XING", href: "https://www.xing.com/profile/Annika_Kluepfel" },
+  { label: "CV", href: `${import.meta.env.BASE_URL}cv.pdf` }
+]
 </script>
 
 <template>
