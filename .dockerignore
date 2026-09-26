@@ -1,0 +1,18 @@
+# Dependencies and build output are recreated inside the image
+node_modules
+dist
+
+# Private CV details must never enter the build context
+cv/private.yml
+cv/*.jpg
+cv/*.pdf
+public/cv.pdf
+
+# Local and repo-only files
+.git
+.github
+.vscode
+.idea
+.env
+.env.*
+*.log
