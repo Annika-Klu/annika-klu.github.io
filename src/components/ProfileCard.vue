@@ -1,12 +1,13 @@
 <script setup>
 import TerminalLine from "./TerminalLine.vue"
-import SocialLinks from "./SocialLinks.vue"
+import ProfileLinks from "./ProfileLinks.vue"
 
 const showGithubLink = import.meta.env.VITE_HIDE_GITHUB_LINK !== "true"
 
 const links = [
   ...(showGithubLink ? [{ label: "GitHub", href: "https://github.com/annika-klu" }] : []),
-  { label: "XING", href: "https://www.xing.com/profile/Annika_Kluepfel" }
+  { label: "XING", href: "https://www.xing.com/profile/Annika_Kluepfel" },
+  { label: "CV", href: `${import.meta.env.BASE_URL}cv.pdf` }
 ]
 </script>
 
@@ -28,7 +29,7 @@ const links = [
 
     <TerminalLine prefix="&gt;">vue · react · python · sql · docker</TerminalLine>
 
-    <SocialLinks :links="links" />
+    <ProfileLinks :links="links" />
   </main>
 </template>
 
