@@ -27,7 +27,7 @@ profile:
     anthropology and working in public administration, I retrained as a
     developer in 2020. Since then I have built web applications with Vue and React,
     written SQL for APIs and reporting, and developed data
-    pipelines and tooling in a data warehouse team. I am most at home beneath
+    pipelines in a data warehouse team. I am most at home beneath
     the surface – databases, APIs and automation – while an eye for design
     helps me on the frontend.
   de: >
@@ -35,10 +35,10 @@ profile:
     Ethnologie-Studium und einigen Jahren in der öffentlichen Verwaltung bin ich
     2020 in die Softwareentwicklung gewechselt. Seitdem habe ich Webanwendungen
     mit Vue und React entwickelt, SQL für APIs und Reporting
-    geschrieben sowie im Data-Warehouse-Team Datenpipelines und Tools für deren
-    Betrieb gebaut. Am wohlsten fühle ich mich unter der Oberfläche – bei
+    geschrieben sowie im Data-Warehouse-Team Datenpipelines gebaut.
+    Am wohlsten fühle ich mich unter der Oberfläche – bei
     Datenbanken, APIs und Automatisierung. Mein Blick für Design kommt mir
-    dabei im Frontend zugute.
+    im Frontend zugute.
 
 experience:
   # Several roles at one company: list them under `roles`, newest first.
@@ -69,12 +69,10 @@ experience:
           en: Data Warehouse & BI Engineer
           de: DWH- & BI-Engineer
         items:
-          - en: Building and monitoring data pipelines
-            de: Entwicklung und Überwachung von Datenpipelines
-          - en: Tooling for pipeline operations, e.g. alerts for failed pipeline runs posted to a Microsoft Teams channel
-            de: Tools für den Pipeline-Betrieb, z. B. Benachrichtigungen über fehlgeschlagene Pipeline-Läufe in einem Teams-Kanal
-          - en: Writing a CLI in a repo holding SQL that helps deploy changes to different databases
-            de: Entwicklung eines CLI in einem SQL-Repository, um Änderungen auf verschiedene Datenbanken auszurollen
+          - en: Building data pipelines and tooling for their operation, e.g. alerts for failed runs posted to a Microsoft Teams channel
+            de: Entwicklung von Datenpipelines und Tools für den Betrieb, z. B. Benachrichtigungen über fehlgeschlagene Läufe in einem Teams-Kanal
+          - en: Writing a CLI to deploy SQL changes to different databases
+            de: Entwicklung eines CLI, um Änderungen an SQL-Code auf verschiedene Datenbanken auszurollen
 
       - from: "2023-10"
         to: "2025-03"
@@ -82,8 +80,8 @@ experience:
           en: SQL Developer
           de: SQL-Entwickler
         items:
-          - en: Writing SQL for API endpoints, for ad-hoc data requests from departments (e.g. upcoming seminars in a given period) and as data sources for documents generated on demand from the CRM
-            de: SQL für API-Endpunkte, für Ad-hoc-Datenabfragen der Fachabteilungen (z. B. anstehende Seminare in einem bestimmten Zeitraum) sowie als Datenquelle für Dokumente, die bei Bedarf aus dem CRM erzeugt werden
+          - en: Writing SQL for API endpoints, ad-hoc requests from departments and on-demand CRM documents
+            de: SQL für API-Endpunkte, Ad-hoc-Anfragen der Fachabteilungen und bei Bedarf aus dem CRM erzeugte Dokumente
           - en: Developing a small web app for services the CRM does not provide, with Microsoft Entra ID sign-in (MSAL.js) and a GitHub Actions workflow deploying it to internal servers via self-hosted runners
             de: Entwicklung einer kleinen Web-App für Funktionen, die das CRM nicht bietet, mit Anmeldung über Microsoft Entra ID (MSAL.js) und einem GitHub-Actions-Workflow für das Deployment auf interne Server über Self-hosted Runner
 
@@ -111,12 +109,10 @@ experience:
           en: Other tasks as required
           de: Weitere Aufgaben nach Bedarf, beispielsweise
         items:
-          - en: Developing a product matching algorithm (JavaScript)
-            de: Entwicklung eines Algorithmus zum Abgleich von Produktdaten mit der internen Produkt-Datenbank (JavaScript)
-          - en: Various scripts to use third-party APIs or scrape data (JavaScript)
-            de: Skripte zur Nutzung diverser APIs oder für Daten-Scraping (JavaScript)
-          - en: Developing an application that accepts file uploads with product data, posts them to a third-party API for text generation and receives the results on a webhook endpoint (Python)
-            de: Entwicklung einer Anwendung, die Produktdaten an die API eines Dienstes für Produkt-Betextung sendet und generierte Texte auf einem Endpoint empfängt (Python)
+          - en: Product matching algorithm, API integrations and scraping scripts (JavaScript)
+            de: Algorithmus zum Abgleich von Produktdaten, API-Integrationen und Scraping-Skripte (JavaScript)
+          - en: "Text generation for product data: first for uploaded Magento exports (Python), later rebuilt as an automated service triggered by Akeneo PIM webhooks (Vue, Express)"
+            de: "Texterstellung für Produktdaten: zunächst für hochgeladene Magento-Exporte (Python), später neu umgesetzt als automatischer, per Akeneo-PIM-Webhook ausgelöster Service (Vue, Express)"
 
   - from: "2015-12"
     to: "2022-02"
