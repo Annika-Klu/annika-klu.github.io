@@ -18,7 +18,8 @@
 
 #let ink = rgb("#1d2529")
 #let muted = rgb("#66737a")
-#let accent = rgb("#2b7f8e") // print-safe darker variant of the site accent
+#let accent = rgb("#2a8c9d") // headings: brighter, still legible on white (3.9:1)
+#let accent-deco = rgb("#2ea0b3") // rules, bullets, separators (graphics need 3:1)
 #let accent-light = rgb("#57c2d6") // site accent, used on the dark header
 #let header-fill = gradient.linear(rgb("#0c2927"), rgb("#0d1a2b"), angle: 20deg)
 
@@ -86,12 +87,12 @@
 
 #let bullet(body) = grid(
   columns: (0.9em, 1fr),
-  box(square(size: 3pt, fill: accent), baseline: -1.9pt), body,
+  box(square(size: 3pt, fill: accent-deco), baseline: -1.9pt), body,
 )
 
 // Glued to the preceding item (non-breaking space) so a wrapped line never
 // starts with a separator.
-#let dot = text(fill: accent, weight: "bold", sym.space.nobreak + "· ")
+#let dot = text(fill: accent-deco, weight: "bold", sym.space.nobreak + "· ")
 
 // Two-column row: meta (dates, labels) on the left, content on the right.
 #let rows(..cells) = grid(
@@ -109,7 +110,7 @@
     columns: (date-col, 1fr),
     column-gutter: gutter,
     align: horizon,
-    line(length: 100%, stroke: 0.6pt + accent),
+    line(length: 100%, stroke: 2pt + accent-deco),
     text(size: 12pt, weight: "semibold", fill: accent, label(key)),
   ))
   body
