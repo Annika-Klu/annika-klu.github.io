@@ -261,5 +261,5 @@
 ))
 
 #section("skills", rows(
-  ..data.skills.map(s => (on-baseline(meta(t(s.group), fill: ink)), s.items.map(t).join(dot))).flatten(),
+  ..data.skills.map(s => (on-baseline(meta(t(s.group), fill: ink)), s.items.map(i => box(t(i))).join(dot))).flatten(),
 ))
