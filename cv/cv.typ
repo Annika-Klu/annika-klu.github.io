@@ -1,6 +1,7 @@
-// Renders cv.yml as a PDF. From this folder:
-//   typst compile --font-path fonts cv.typ cv-en.pdf
-//   typst compile --font-path fonts --input lang=de cv.typ cv-de.pdf
+// Renders cv.yml as a PDF. From the project root (or use the npm scripts):
+//   typst compile --root . --font-path cv/fonts cv/cv.typ cv/cv-en.pdf
+//   typst compile --root . --font-path cv/fonts --input lang=de cv/cv.typ cv/cv-de.pdf
+// --root . lets the template read the version from package.json.
 // Add `--input private=true` for the private variant: contact details and
 // photo from the gitignored private.yml (see private.example.yml).
 
@@ -9,6 +10,9 @@
 #let lang = sys.inputs.at("lang", default: "en")
 #assert(lang in langs, message: "unsupported lang: " + lang)
 #let private = sys.inputs.at("private", default: "false") == "true"
+// Site version, stored in the PDF metadata to tell which CV a recipient has.
+#let version = json("/package.json").version
+#let build-date = datetime.today()
 #let private-data = if private { yaml("private.yml") } else { (:) }
 #let contact-data = data.contact + private-data.at("contact", default: (:))
 #let photo = private-data.at("photo", default: none)
@@ -225,7 +229,11 @@
 // ---------------------------------------------------------------------------
 // Document
 
-#set document(title: data.person.name + " – " + label("cv"), author: data.person.name)
+#set document(
+  title: data.person.name + " – " + label("cv"),
+  author: data.person.name,
+  keywords: (label("cv"), "v" + version, build-date.display()),
+)
 #set page(
   paper: "a4",
   margin: margin,
