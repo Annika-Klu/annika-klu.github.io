@@ -23,22 +23,16 @@ contact:
 
 profile:
   en: >
-    Full-stack software developer with a strong focus on data. After studying
-    anthropology and working in public administration, I retrained as a
-    developer in 2020. Since then I have built web applications with Vue and React,
-    written SQL for APIs and reporting, and developed data
-    pipelines in a data warehouse team. I am most at home beneath
-    the surface – databases, APIs and automation – while an eye for design
-    helps me on the frontend.
+    Full-stack software developer with a strong focus on data. I came to
+    software in 2020, after studying anthropology and working in public
+    administration. I am most at home beneath the surface – databases, APIs
+    and automation – while an eye for design helps me on the frontend.
   de: >
     Full-Stack-Softwareentwickler mit ausgeprägtem Fokus auf Daten. Nach meinem
-    Ethnologie-Studium und einigen Jahren in der öffentlichen Verwaltung bin ich
-    2020 in die Softwareentwicklung gewechselt. Seitdem habe ich Webanwendungen
-    mit Vue und React entwickelt, SQL für APIs und Reporting
-    geschrieben sowie im Data-Warehouse-Team Datenpipelines gebaut.
-    Am wohlsten fühle ich mich unter der Oberfläche – bei
-    Datenbanken, APIs und Automatisierung. Mein Blick für Design kommt mir
-    im Frontend zugute.
+    Ethnologie-Studium und einigen Jahren im öffentlichen Dienst bin ich
+    2020 in die Softwareentwicklung gewechselt. Am wohlsten fühle ich mich unter
+    der Oberfläche – bei Datenbanken, APIs und Automatisierung. Mein Blick für
+    Design kommt mir im Frontend zugute.
 
 experience:
   # Several roles at one company: list them under `roles`, newest first.
@@ -56,12 +50,10 @@ experience:
           en: Full-Stack Software Developer
           de: Full-Stack-Softwareentwickler
         items:
-          - en: Developing a web application in React, Next.js and TypeScript
-            de: Entwicklung einer Webanwendung mit React, Next.js und TypeScript
+          - en: Developing a web application in React, Next.js and TypeScript, with occasional work on the legacy Java application that serves as its backend and whose frontend it is meant to replace
+            de: Entwicklung einer Webanwendung mit React, Next.js und TypeScript sowie gelegentliche Arbeiten an der Java-Legacy-Anwendung, die als Backend dient und deren Frontend abgelöst werden soll
           - en: Writing a CLI wrapper for a configuration server in Go
             de: Entwicklung eines CLI-Wrappers für einen Konfigurationsserver in Go
-          - en: Running a legacy Java application locally in Docker for development
-            de: Lokaler Betrieb einer Java-Legacy-Anwendung in Docker für die Entwicklung
 
       - from: "2025-04"
         to: "2026-06"
@@ -69,10 +61,10 @@ experience:
           en: Data Warehouse & BI Engineer
           de: DWH- & BI-Engineer
         items:
-          - en: Building data pipelines and tooling for their operation, e.g. alerts for failed runs posted to a Microsoft Teams channel
-            de: Entwicklung von Datenpipelines und Tools für den Betrieb, z. B. Benachrichtigungen über fehlgeschlagene Läufe in einem Teams-Kanal
+          - en: Building data pipelines and tooling for their operation, e.g. alerts for failed runs
+            de: Entwicklung von Datenpipelines und Tools für den Betrieb, z. B. Alerts für fehlgeschlagene Läufe
           - en: Writing a CLI to deploy SQL changes to different databases
-            de: Entwicklung eines CLI, um Änderungen an SQL-Code auf verschiedene Datenbanken auszurollen
+            de: CLI zum Ausrollen von SQL-Änderungen auf verschiedene Datenbanken
 
       - from: "2023-10"
         to: "2025-03"
@@ -80,8 +72,8 @@ experience:
           en: SQL Developer
           de: SQL-Entwickler
         items:
-          - en: Writing SQL for API endpoints, ad-hoc requests from departments and on-demand CRM documents
-            de: SQL für API-Endpunkte, Ad-hoc-Anfragen der Fachabteilungen und bei Bedarf aus dem CRM erzeugte Dokumente
+          - en: Writing SQL for API endpoints, ad-hoc requests from departments and CRM documents
+            de: SQL für API-Endpunkte, Ad-hoc-Anfragen der Fachabteilungen und CRM-Dokumente
           - en: Developing a small web app for services the CRM does not provide, with Microsoft Entra ID sign-in (MSAL.js) and a GitHub Actions workflow deploying it to internal servers via self-hosted runners
             de: Entwicklung einer kleinen Web-App für Funktionen, die das CRM nicht bietet, mit Anmeldung über Microsoft Entra ID (MSAL.js) und einem GitHub-Actions-Workflow für das Deployment auf interne Server über Self-hosted Runner
 
@@ -99,12 +91,10 @@ experience:
           en: Main tasks
           de: Kernaufgaben
         items:
-          - en: Building the spirits platform _Distilando_ in Vue (Nuxt for SEO)
-            de: Entwicklung der Plattform _Distilando_ in Vue (Nuxt für SEO)
-          - en: Backend of multiple Express apps querying SQL databases
-            de: Backend aus mehreren Express-Apps und SQL-Datenbanken
-          - en: Cloud deployments in a Docker-based environment
-            de: Deployment in der Cloud in einer Docker-basierten Umgebung
+          - en: Building the spirits e-commerce platform _Distilando_ with a Vue/Nuxt frontend
+            de: Entwicklung der Spirituosen-E-Commerce-Plattform _Distilando_ mit Vue/Nuxt-Frontend
+          - en: Developing its backend as several Express services on SQL databases, containerised with Docker and hosted in the cloud
+            de: Entwicklung des Backends aus mehreren Express-Services mit SQL-Datenbanken, containerisiert mit Docker und in der Cloud betrieben
       - label:
           en: Other tasks as required
           de: Weitere Aufgaben nach Bedarf, beispielsweise
@@ -224,17 +214,15 @@ languages:
     level: { en: Intermediate (B1–B2), de: Gute Kenntnisse (B1–B2) }
 
 skills:
-  - group: { en: Programming, de: Programmierung }
-    items: [TypeScript, Python, SQL]
-  - group: Web
-    items: [Vue, React, Next.js, Node.js, Flask, REST APIs, Tailwind CSS]
+  - group: { en: Development, de: Entwicklung }
+    items: [TypeScript, Python, SQL, Vue, Nuxt, React, Next.js, Flask]
   - group: { en: Data, de: Daten }
     items:
       - { en: ETL pipelines, de: ETL-Pipelines }
       - { en: Data modelling, de: Datenmodellierung }
       - Microsoft Fabric
       - Power BI
-  - group: Automation & DevOps
-    items: [Docker, GitHub Actions, CI/CD, { en: CLI tools, de: CLI-Tools }, Bash, Linux]
+  - group: DevOps
+    items: [Docker, GitHub Actions, CI/CD, Bash, Linux]
   - group: Design
     items: [Figma, Affinity Studio, Adobe Creative Cloud]
