@@ -1,15 +1,16 @@
 {
   "name": "annika-klu-portfolio",
-  "version": "0.0.0",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "cv:en": "typst compile --font-path cv/fonts cv/cv.typ public/cv.pdf",
-    "cv:de": "typst compile --font-path cv/fonts --input lang=de cv/cv.typ cv/cv-de.pdf",
-    "cv:en:private": "typst compile --font-path cv/fonts --input private=true cv/cv.typ cv/cv-en-private.pdf",
-    "cv:de:private": "typst compile --font-path cv/fonts --input lang=de --input private=true cv/cv.typ cv/cv-de-private.pdf",
+    "cv:en": "typst compile --root . --font-path cv/fonts cv/cv.typ public/cv.pdf",
+    "cv:de": "typst compile --root . --font-path cv/fonts --input lang=de cv/cv.typ cv/cv-de.pdf",
+    "cv:en:private": "typst compile --root . --font-path cv/fonts --input private=true cv/cv.typ cv/cv-en-private.pdf",
+    "cv:de:private": "typst compile --root . --font-path cv/fonts --input lang=de --input private=true cv/cv.typ cv/cv-de-private.pdf",
+    "cv:all": "npm run cv:en && npm run cv:de && npm run cv:en:private && npm run cv:de:private",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
