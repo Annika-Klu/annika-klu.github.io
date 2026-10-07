@@ -61,8 +61,8 @@ experience:
           en: Data Warehouse & BI Engineer
           de: DWH- & BI-Engineer
         items:
-          - en: Building data pipelines and tooling for their operation, e.g. alerts for failed runs
-            de: Entwicklung von Datenpipelines und Tools für den Betrieb, z. B. Alerts für fehlgeschlagene Läufe
+          - en: Building data pipelines and Python notebooks, plus tooling for their operation, e.g. alerts for failed runs
+            de: Entwicklung von Datenpipelines und Python-Notebooks sowie Tools für den Betrieb, z. B. Alerts für fehlgeschlagene Läufe
           - en: Writing a CLI to deploy SQL changes to different databases
             de: CLI zum Ausrollen von SQL-Änderungen auf verschiedene Datenbanken
 
@@ -101,8 +101,8 @@ experience:
         items:
           - en: Product matching algorithm, API integrations and scraping scripts (JavaScript)
             de: Algorithmus zum Abgleich von Produktdaten, API-Integrationen und Scraping-Skripte (JavaScript)
-          - en: "Text generation for product data: first for uploaded Magento exports (Python), later rebuilt as an automated service triggered by Akeneo PIM webhooks (Vue, Express)"
-            de: "Texterstellung für Produktdaten: zunächst für hochgeladene Magento-Exporte (Python), später neu umgesetzt als automatischer, per Akeneo-PIM-Webhook ausgelöster Service (Vue, Express)"
+          - en: "Text generation for product data: first a Flask app processing uploaded Magento exports (Python), later rebuilt as an automated service triggered by Akeneo PIM webhooks (Vue, Express)"
+            de: "Texterstellung für Produktdaten: zunächst eine Flask-App für hochgeladene Magento-Exporte (Python), später neu umgesetzt als automatischer, per Akeneo-PIM-Webhook ausgelöster Service (Vue, Express)"
 
   - from: "2015-12"
     to: "2022-02"
@@ -215,13 +215,12 @@ languages:
 
 skills:
   - group: { en: Development, de: Entwicklung }
-    items: [TypeScript, Python, SQL, Vue, Nuxt, React, Next.js, Flask]
+    items: [TypeScript, Python, SQL, Vue, Nuxt, React, Next.js, Express, Flask]
   - group: { en: Data, de: Daten }
     items:
       - { en: ETL pipelines, de: ETL-Pipelines }
       - { en: Data modelling, de: Datenmodellierung }
       - Microsoft Fabric
-      - Power BI
   - group: DevOps
     items: [Docker, GitHub Actions, CI/CD, Bash, Linux]
   - group: Design
